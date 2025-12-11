@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D4226C12EEA5E92005CFB61 /* ApolloTestSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 0D4226C02EEA5E92005CFB61 /* ApolloTestSupport */; };
 		6618E68E2E998DF600C568F6 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 6618E68D2E998DF600C568F6 /* Apollo */; };
 		6618E6CB2E9C843200C568F6 /* RocketReserverAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 6618E6CA2E9C843200C568F6 /* RocketReserverAPI */; };
 		6618E6CF2E9EC62000C568F6 /* ApolloClient+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6618E6CE2E9EC61700C568F6 /* ApolloClient+Setup.swift */; };
@@ -33,7 +34,18 @@
 		66F96FEA29FC183200713B80 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F96FE929FC183200713B80 /* NotificationView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0D4226BB2EEA5B4C005CFB61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66F96F8F29FAC0D600713B80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66F96F9629FAC0D600713B80;
+			remoteInfo = RocketReserver;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0D4226B72EEA5B4B005CFB61 /* RocketReserverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RocketReserverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6618E6C72E9C7D3300C568F6 /* LaunchList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchList.graphql; sourceTree = "<group>"; };
 		6618E6CE2E9EC61700C568F6 /* ApolloClient+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApolloClient+Setup.swift"; sourceTree = "<group>"; };
 		6618E6D02EA01CB400C568F6 /* LaunchDetails.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchDetails.graphql; sourceTree = "<group>"; };
@@ -58,7 +70,19 @@
 		66F96FE929FC183200713B80 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0D4226B82EEA5B4C005CFB61 /* RocketReserverTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = RocketReserverTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		0D4226B42EEA5B4B005CFB61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D4226C12EEA5E92005CFB61 /* ApolloTestSupport in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		66F96F9429FAC0D600713B80 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -91,6 +115,7 @@
 			children = (
 				66EEA77E2A13C94400BB8C72 /* graphql */,
 				66F96F9929FAC0D600713B80 /* RocketReserver */,
+				0D4226B82EEA5B4C005CFB61 /* RocketReserverTests */,
 				66F96F9829FAC0D600713B80 /* Products */,
 				66F96FCF29FAD2EC00713B80 /* Frameworks */,
 			);
@@ -100,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				66F96F9729FAC0D600713B80 /* RocketReserver.app */,
+				0D4226B72EEA5B4B005CFB61 /* RocketReserverTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +170,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0D4226B62EEA5B4B005CFB61 /* RocketReserverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D4226BF2EEA5B4C005CFB61 /* Build configuration list for PBXNativeTarget "RocketReserverTests" */;
+			buildPhases = (
+				0D4226B32EEA5B4B005CFB61 /* Sources */,
+				0D4226B42EEA5B4B005CFB61 /* Frameworks */,
+				0D4226B52EEA5B4B005CFB61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D4226BC2EEA5B4C005CFB61 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				0D4226B82EEA5B4C005CFB61 /* RocketReserverTests */,
+			);
+			name = RocketReserverTests;
+			packageProductDependencies = (
+				0D4226C02EEA5E92005CFB61 /* ApolloTestSupport */,
+			);
+			productName = RocketReserverTests;
+			productReference = 0D4226B72EEA5B4B005CFB61 /* RocketReserverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		66F96F9629FAC0D600713B80 /* RocketReserver */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66F96FBB29FAC0D800713B80 /* Build configuration list for PBXNativeTarget "RocketReserver" */;
@@ -174,9 +224,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					0D4226B62EEA5B4B005CFB61 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = 66F96F9629FAC0D600713B80;
+					};
 					66F96F9629FAC0D600713B80 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -202,11 +256,19 @@
 			projectRoot = "";
 			targets = (
 				66F96F9629FAC0D600713B80 /* RocketReserver */,
+				0D4226B62EEA5B4B005CFB61 /* RocketReserverTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0D4226B52EEA5B4B005CFB61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		66F96F9529FAC0D600713B80 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -224,6 +286,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0D4226B32EEA5B4B005CFB61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		66F96F9329FAC0D600713B80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,7 +315,66 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0D4226BC2EEA5B4C005CFB61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66F96F9629FAC0D600713B80 /* RocketReserver */;
+			targetProxy = 0D4226BB2EEA5B4C005CFB61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		0D4226BD2EEA5B4C005CFB61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 866AYRDRC8;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.RocketReserverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RocketReserver.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RocketReserver";
+			};
+			name = Debug;
+		};
+		0D4226BE2EEA5B4C005CFB61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 866AYRDRC8;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.RocketReserverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RocketReserver.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RocketReserver";
+			};
+			name = Release;
+		};
 		66F96FB929FAC0D800713B80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -424,6 +552,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0D4226BF2EEA5B4C005CFB61 /* Build configuration list for PBXNativeTarget "RocketReserverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D4226BD2EEA5B4C005CFB61 /* Debug */,
+				0D4226BE2EEA5B4C005CFB61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		66F96F9229FAC0D600713B80 /* Build configuration list for PBXProject "RocketReserver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -479,6 +616,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0D4226C02EEA5E92005CFB61 /* ApolloTestSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6618E68C2E998DF600C568F6 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloTestSupport;
+		};
 		6618E68D2E998DF600C568F6 /* Apollo */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6618E68C2E998DF600C568F6 /* XCRemoteSwiftPackageReference "apollo-ios" */;
